@@ -1,0 +1,58 @@
+Introduction
+	this is straight forward, were gonna learn how to make a file system that will look elegant and clean
+Materials and examples
+	1. making a directory
+		it is impportant that we create a data structure that will help us organize data
+		$mkdir [options] <directory>
+		the directory that we provide can either be a relative or an absolute.
+		
+		$mkdir -pv Documents/foo/bar
+		$mkdir: created directory "Documents/foo"
+		$mkdir: created directory "Documents/foo/bar"
+		-p tells mkdir to create parents directories as needed. 
+		This allows us to create deep directories on the fly. 
+		-v means verbose. it will tell us what mkdir is actually doing.
+		
+	2. removing a directory
+		$rmdir [options] <directory>
+		rmdir also supports the -p and -v options just like mkdir
+		Do take note that before we can delete a directory, we need to make sure that directory is empty
+		these are for direcotries only, we have not reached on how to delete files.
+		
+	3. creating a blank file
+		$touch [options] <filename>
+		touch will check a directory if the file exist and if it does not,
+		it creates a file of that name.
+		touch is actually a command use to modify the access and the modification times of a file
+		^^I am not sure how to do the above function. will update after trying
+	4. copying a file or directory
+		main purpose is to create a duplicate so that if something goes wrong, we can easily revert 
+		back to the original
+		cp [options] <source> <destination>
+		both source and destination are path. 
+		You can either use absolute path or relative path
+		$cp filetocopy directorytopaste
+		the bad thing about this is that, it can only copy 1 file into a directory
+		what if i want to copy the whole directory into another?
+		-r recursive allows us to do do this transfer
+		recursive looks at the directory and all the files within it and looks into subdirectories
+		it then copies all that into the destination directory
+		$cp -r directoryToCopy  directorytopaste
+	5. moving a file or directory
+		$ mv [options] <source><destination>
+		
+	6. renaming file and directory
+		normally mv will be use to move a file/directory into a new directory
+		if the source and destination are from the same directory, moving that file/directory
+		will result into a new name of the file.
+	7. removing a file
+		rm [options] <file>
+		careful when removing, there is no turning back
+		-r recursive is a useful option to have to delete non empty directories
+		-i interactive will prompt you to ensure that the delete should be permanent.
+
+		
+		
+	
+summary
+pracitces and challenges

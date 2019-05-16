@@ -1,0 +1,35 @@
+introduction
+	command line
+		Though most people are used to the graphical user interface(GUI) knowing the command line has its advantages.
+		the command line is a text-based interface that allows us to communicate with the systems with commands
+
+materials and examples
+	1. opening a terminal
+		there are 2 ways to open a terminal
+		First is to go to applications--->utilities--> terminal
+		second is to "right click" with your mouse on the desktop and then press on open terminal
+	2. writing and understanding your first linux command 
+		$ user@bash : ls -l <directory>
+		we can break this command into 3 parts.
+			ls means list, and this is the main commans
+			-l is an option for the ls command. 
+			The options for most command can be found by entering <command> --h
+			[directory] is the command argument.
+			therefore, we can see that the general format of a basic command is , command space option space command argument		
+	3. what is bash
+		within a terminal we ave what is called a shell. a shell defines how the terminal behaves and looks after you run a command
+		In linux, the shell that we are using is called bash
+		bash simply stand for bourne again shell
+	4. what is echo?
+		echo is a command used to deisplay messages
+	
+
+summary
+
+excercices
+	Shortcuts
+		instead of slaving yourself with retyping again and again on the linux system, 
+		use the up and down arrow keys to find previously typed commands
+
+
+

@@ -1,0 +1,33 @@
+There  will  be 13 sections to this guide.
+1. The command line
+2. basic navigation
+3. more about files
+4. manual pages
+5. file manipulation
+6. vi text editor
+7. wildcards
+8. perm,issions
+9. filters
+10. grep and regular expressions
+11. piping and redirection
+12. process management
+13. scripting 
+14. cheat sheet 
+
+By spliiting this up into 13 different sections, 
+we can focus and give more examples and use cases on each sections more.
+
+We will follow this format in in every section:
+1. introduction of what we will learn
+2. detailed material including extensive examples
+3. summary of the more inportant concepts covered
+4. exercices and challenges that will solidify our knowledge and skills
+
+House rules:
+1. <something> 
+	means that you are to replace this space with something useful
+	<n> ussually mean replace this with a number
+2. [something] 	
+	means that this something is optional. the command will run with or without it
+3. when you see $ sign before a text, this means that this should be placed in the terminal
+	$user@bash will be shorten to $ in this practice. 

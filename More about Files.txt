@@ -1,0 +1,39 @@
+introduction
+	it has been preety basic stuff til now.We will go over some theory about files
+	this will help us understand what the commands are doing even further.
+materials and examples
+	1. everything is a file!!
+		your text file is a file is a file... thats boring
+		your directory is a file..... what
+		your monitor is a file.... wtf
+		you are seens as a file... just kidding
+	2. linux is an extensionless systems
+		In windows and apple, we identify file thtough the last 2-4 characters(extensions) after the . at the 
+		end of their names
+		Eg. HELLO.txt   picture.png  file.exe
+		In linux this is not the case. 
+		Linux ignores these extensions and looks inside the file to determine what type of file it is.
+		Due to this default case, it may be hard for us to know what type of file a file.
+		Thus, we can check it with the command
+		$file [path]
+	3. linux is case sensitive
+		Documents != documents
+	4. space in names
+		$ls Documents
+		$ hello file.txt  Holiday photos
+		$cd Holiday photos 
+		this will give us an error. 
+		this is because Holiday and photos are seens as 2 separate command line arguments
+	5. quotes
+		a way around this is through single quotation marks.
+		anything inside is seens as a single item
+	6. escape characters
+		we can use the escape character called "\"
+		backslash is a downward slope gradient
+		a slash is an upward slope gradientds
+	7. hidden files and directories
+		$ls -a 
+		-a option gives us the ability to see all the file inside a  directory.
+	
+summary 
+practices and challenges

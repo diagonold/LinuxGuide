@@ -1,0 +1,28 @@
+introductions
+	Manual pages is a a reference for all the commands in linux
+	they procide us with all these details
+	1. commands
+	2. description
+	3. what they do
+	4. specifics on how to run them
+	5. command line arguments they accept
+materials and examples
+	1. How to use manual pages?
+		simply type
+		$man <command to look up>
+		Once done, just exit the page.
+	2. Keyword search with man
+		this can be helpful if you do not know the command you want to use but knows what you want to achieve
+		$ man -k<search term>
+	3. Searcihing within the manual page
+		$/<term you would like to search for>
+	4. more on the running of commands.
+		long hand options begins with --
+		long hands options are verbose and easier to read later
+		short hands options begins with  -
+		short hands options are short cuts
+		Short hands allows us to connect several options togethter by placing all those options together after the dash
+		
+		
+summary
+practices

@@ -1,0 +1,35 @@
+introduction
+	vi is a text editor that only has 2 functions , inserting and editing
+	it can be access in the terminal. removes the need for any mouse
+	in essence it is a command line text editor. 
+materials and examples
+	1. To initialize
+		$vi <file>
+		the file can either be an absolute or relative path
+		if file is not created , vi will create it for you
+	2. insert or editing
+		take note that we always start in edit mode.
+		insert: input or enter content into the filename
+			press i to insert
+		edit: perform actions such as copying deleting, search and replace
+			press esc to go back to edit mode
+		
+	3. saving and exiting
+		$ZZ----- capital letters for save and exit
+		$:q----- discard all changes, since the last save and exit
+		$:w ---- save file but dont exit
+		$:wq ---save file and exit
+		when there is a colon there, we need to enter.
+		
+	4. Other ways to view files.
+		$cat <file>
+		this stands for concatenate but we can simply think of it as a way to view files
+		$less <file>
+		for larger files, this is much better. cat only allows you to see last page of the content.
+	5. deleting content
+	6. undoing
+		press u to undo the last action
+		press U to undo all the chanes in the current line
+	
+summary 
+excercises

@@ -1,0 +1,55 @@
+Introduction
+	Finding your way around linux is like a game.
+	there is actually a game from mit that allows you to learn how to navigate in the linux system
+	in a game-like system.
+	the game is called http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html
+	Go ahead and play with it if you are up to challenge yourself.
+	
+materials and examples
+	1. where am i?
+		$pwd
+		this will print our current working directory
+	2. where can i go?
+		$ls [option] [location]
+		this will show us what is in our current location
+		$ls -l [location]
+		$total 3
+		$drwxr-xr-x  2 ryan users 4096 Mar 23 13:34 bin
+		$drwxr-xr-x 18 ryan users 4096 Feb 17 09:12 Documents
+		$drwxr-xr-x  2 ryan users 4096 May 05 17:25 public_html
+		-l means long listing
+		it gives us a lot of info regarding the directory
+		total, gives us the total number of files in the directory and its subdirectories
+		the first character tells us whether it is a file or a directory
+		the next 9 characters are permissions of the file or directory
+		the next field is the numner of blocks.... not sure what blocks are though
+		the next field is the owner of file or directory
+		the next field is the group or the file the firectory belongs too.
+		this could either be from different partoes such as the users or the root user or administrators
+		the next field is the file size
+		the next field is the time of modification
+		the last field is the actual name of file or directory
+	3. path
+		Need to appreciate that linux is a hierarirchal system that begins at the very top with the root directory
+		3a. absolute path
+			Easiest way to identify relative path is to look at the beginning of the path.
+			if it starts with /, then yes it is an absolute path
+			try this:
+			$pwd 
+			you will see that the current working direcotry that is printed is always an abolute path
+		3b. relative path
+			relative paths specify a location regarding your current location in the system
+			thus they will not start with a slash.
+		3c. more on paths
+			Though paths are very usefule there are still shortcuts to ease your life
+			(~) this refers to your home directory
+			(.) this refers to your current directory
+				eg.  ./[absolute path of desired directory or file]
+			(..) this refers to the parent directory, which means if you cd to that path, you will move up
+				to the parent level.
+	6. moving around
+		cd stands for change directory
+		cd [location]
+		if you run cd without any command, it will bring you to your home directory
+summary 
+excercises and challenges

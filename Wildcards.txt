@@ -1,0 +1,63 @@
+introductions
+	what we have learnt so far are cool things to operate on a single file
+	now we will learn how to make a play(command modification) so that a command will be done on a specific group of file at the same time.
+	wildcards are used to modify paths or can be used as a path in any command
+materials and examples
+	wildcards are a set of building blocks that allow you to create a pattern
+	defining a set of files and directories. Whenever we refer to a path we may also
+	use wildcards in that path to turn it into a set of files or directories
+	wildcards is not a command from shell
+	instead wildcards is a process from bash that translates  it into the right texts
+	EG.
+	when we type 
+	$ls f*
+	bash translates it into any file or directory that starts with f
+	thus  this actually means
+	$ls foo.txt fools far.img 
+	
+	1. Basic set of wildcards:
+		* ----- represent zero or more characters
+			this can be very useful if you do want do consider a all the subdirectories of a path and look at the sub-subdorectories,
+			do this ls /dir/*/*.???
+			this will give us any file with 3 letter extension for that dir, even those within its subdirectories
+			you can do this 
+		? ----- represent a single character
+		[] ---- represents a range of characters
+	NEED MORE EXAMPLES ON HOW TO USE WILDCARDS
+	in our examples, we will be using command ls in order see the result of wildcards clearly.
+	
+	example 1: using *
+		$ls *.txt
+		this will return any file with a txt file at the end. 
+		
+		$ls bosch*
+		this will return anything that has the bosch name at the start of the file or directory
+	example 2:using ?
+		$ls *.???
+		this will return any file that has  a 3 letter extension
+		
+		$ls ????h*
+		this will return any file or directory with h as its 5th letter
+	
+	example 3: using [], remember that this allows you to limit to a subset of characters
+		$ls [sv]*
+		this will return a file/dir that has a first letter of either s or v
+		
+		$ls *[abcdefg]
+		this will return any file/dir that ends with that set of letters
+		
+		$ls ???[abc]* 
+		this will return any file/dir that has abc as its 4th letter.	
+		
+		$ls [0-9]*
+		this will return any file/dir that starts with 0 to 9
+		
+		$ls [a-b]* 
+		thsi will return any file/dir that starts with an alphabet
+	
+	example 4: using [] and a caret
+		$ls [^a-k]*
+		caret means reverse
+		this will return any file/dir that does not start with a-k
+	
+	

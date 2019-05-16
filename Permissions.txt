@@ -1,0 +1,71 @@
+introductions:
+	permission tells us what a person can or cannot do with a file/dir
+	By modifying permissions on linux, we can make sure files that cannot be changed will not be changed
+materials and examples
+	3 letters to rule them all
+	r READ
+		may only read contents of file
+	w WRITE
+		may change the contents of file
+	x EXCUTE
+		you may execute the or run the file if it is a program or script
+		
+	3 groups of people that has different authority
+	1.Owner
+		single person that created the file
+	2.Group
+		every file that belongs to a single group
+	3.Other
+		everyone else beside the group and the owner
+		
+	With this, we can set different set of permissions for each Group
+	Thus, we will need to know how to change and view permissions
+	1. view permissions
+		this can be done with long list option
+		$ ls -l [path]
+		eg.
+		$ls -l /home/ryan/linuxtutorialwork/frog.png
+		$-rwxr----x 1 harry users 2.7K Jan 4 07:32 /home/ryan/linuxtutorialwork/frog.png
+		there are typically 10 letters in the permission text of any file/dir, which can be split up into 4 different segments
+		a. 1st character: 
+				either '-' or 'd', 
+				'-' means its a file
+				'd' means ins a directory
+		b. 2nd-4th characters:
+			permission for the owner
+		c.5th-7th character:
+			permissions for group
+		d.8th -10th character:
+			permission for others
+			
+	2.change permissions
+		$chmod [permissions] [path]
+		this consists of 3 parts
+		1.who are we changing the permission for?
+			[ugoa] 
+			u for users
+			g for group
+			o for others
+			a for all
+			
+		2. are we granting or revoking permission?
+			'+' is giving permission
+			'-' is revoking permission
+		3. which permission are we granting/revoking?
+			eg. -r
+			means revoking reading rights
+			eg. -rw 
+			removing reading and writing rights
+			eg. +x 
+			grantng executablity of the file
+		
+		Example1:
+		example2:
+		example3:
+		
+		
+			
+		
+		
+summary
+excercises
