@@ -1,0 +1,8 @@
+introductions:
+	regex are like wildcards, they help us create patterns
+	ussually use to identify and manipulate specific pieces of data
+	
+materials:
+	1. $grep [command line options] <pattern> [path]
+		grep is a command that helps us search a given pattern 
+		or set of data
