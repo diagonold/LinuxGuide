@@ -1,0 +1,51 @@
+Introductions
+	Filters is all about turning data into information
+	a programs that accepts textual data and then transforms it in a particular way
+	Filters are a way to take raw data and manipulate it 
+	to be displayed in a way more suited to what we desire
+	
+	filters have many cimmand line options , 
+	thus it is always good to check the manual page to see what is available
+	
+	Mostly knowing the commands will be enough for you to be profficient
+	constant check of the manual page will be needed in order to modify
+	required options of the commands
+	
+Materials and examples
+1. $head [-number of lines to print] [path]
+	prints the first of many lines of its input
+	If number of line not specified, default is 10
+2. $tail [-number of lines to print] [path]
+	reverse of heads
+3.$sort [-options] [path]
+	by dafault will sort alphabetically 
+	check options for other sorting mechanism
+4.$nl [-options][path]
+	straight forward. nl stands for number lines 
+	which basically number the lines on your text as it
+	gets printed in the terminal
+5.$wc [-options] [path]
+	by default gives us 3 details lines, word and characters
+	it is also possible to specify which you want to output.
+	example: $wc -l [path] 
+		this will output only the number of lunes of the text.
+6.$cut [-options] [path]
+	cut is a program that you can use if your 
+	content is separated into columns
+7.$sed <expression> [path]
+	allows us to do a search and replace on our data.
+	<expression> follows the following format
+		s/search/replace/g
+			s	stands for substitue
+			search	needs to be substituted by the word that is being searched for
+			replace		search word is change to replace word
+			g 	stands for global is optional
+	example:
+		$sed 's/oranges/bananas/g' mysampledata.txt
+8.$uniq [options] [path]
+	for removing multiplicate lines from the data. 
+	these lines must be adjacent to each other.
+	meaning next to one another
+9 $tac [path]
+	this is just a joke on the cat command,
+	this prints the text file from bottom to top.

@@ -43,7 +43,7 @@ materials and examples
 		this consists of 3 parts
 		1.who are we changing the permission for?
 			[ugoa] 
-			u for users
+			u for user/owner
 			g for group
 			o for others
 			a for all
@@ -60,8 +60,30 @@ materials and examples
 			grantng executablity of the file
 		
 		Example1:
+			$chmod u+x file
+			grant permission to owner to execute file.py
 		example2:
+			$chmod uo+x file
+			grant permission to owner and others to execute the file
 		example3:
+			$chmod a-r file
+			remove permission for all to remove the file
+			
+	3. Settings Permissions shorthands
+		using binary method.
+		need to be familiar with binary to know
+		so not the best method to change permission if knowledge of binary is weak
+		$chmod <permission consist of 3 digits representing the permissions for 3 groups of users> <file>
+		Example :
+		$chmod 420 file
+		This mean meant that the user. 4- 100, 2 -010 , 0-000
+		
+	4. The root user:
+		there are only 2 people ussually who may change the permission of a file or a directory
+		the owner of the file/directory and the root user
+		the root user is the superuser
+		
+		
 		
 		
 			
