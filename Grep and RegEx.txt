@@ -2,7 +2,27 @@ introductions:
 	regex are like wildcards, they help us create patterns
 	ussually use to identify and manipulate specific pieces of data
 	
-materials:
-	1. $grep [command line options] <pattern> [path]
-		grep is a command that helps us search a given pattern 
-		or set of data
+materials and examples:
+	1. $egrep [command line options] <pattern> [path]
+		egrep is a command that helps us search a given pattern 
+		just like wildcards, we are given tools to create our own expressions that has a lot of uses
+		egrep looks at a file and checks if the pattern is there and then, returns the whole line that contained that pattern
+	2.Regular expressions
+	Learn the purpose of each operator well
+		. (dot) - a single character.
+		? - the preceding character matches 0 or 1 times only.
+		* - the preceding character matches 0 or more times.
+		+ - the preceding character matches 1 or more times.
+		{n} - the preceding character matches exactly n times.
+		{n,m} - the preceding character matches at least n times and not more than m times.
+		[agd] - the character is one of those included within the square brackets.
+		[^agd] - the character is not one of those included within the square brackets.
+		[c-f] - the dash within the square brackets operates as a range. In this case it means either the letters c, d, e or f.
+		() - allows us to group several characters to behave as one.
+		| (pipe symbol) - the logical OR operation.
+		^ - matches the beginning of the line.
+		$ - matches the end of the line.
+		
+summary:
+practice:
+

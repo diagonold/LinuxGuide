@@ -1,0 +1,24 @@
+introduction:
+	We are going to be using filters ti manipulate data for us. It is a good to skim thorugh your filter notes before diving deep into piping and redirection.
+	whenever we type a command into the terminal, 3 things data streams are automatically activated and connected to it.
+	1.STDIN- this is data fed into program
+	2.STDOUT - this is data printed by program
+	3.STDERR -  for error messages
+	
+	Piping and redirection is the means by which we cnnect the streams between programs and files to direct data in interesting and useful ways.
+
+materials and examples:
+	> - redicrecting output to a file, instead of getting printed. 
+	The terminal will automatically create it if it does not exist.
+	though the data transferred is the same,the formatting of the data can be different.
+	if its an existing file it will be overwritten and replace, so be really careful
+	example:
+	$ls > output
+	this will store the result of ls into output
+
+	>> - appending to an existing file
+
+	<- 
+
+summary:
+practices:
