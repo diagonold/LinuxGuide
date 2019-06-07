@@ -1,0 +1,47 @@
+introduction: .
+	Introduction to Bash scripting
+	basically a script of commands that the computer will follow.
+	anything that can run on the command line may be place into a  script and will behave exactly the same way. 
+	anything placed in a script will run the exact same way in the command line.
+materials and examples:
+	1. the , #!
+			the very first line of any command line script 
+			this tells the system which interpreter to use.
+			for bash script the standard is like this 
+			#! /bin/bash or #!<interpreter location>
+	2. which 
+			sometimes to find the location of the interpreter, we may use which to find the location
+	3.  why the  ./ ?
+			when running a bash script, we ussually add ./myscript.sh 	
+			./ tells the command line to look in our current working directory to find the script
+			the user must have permission before he can run the script.
+			chmod 755 is a good commang to remember as it gives the root user full access
+			while other group and users can excute the file but canot write any changes.
+	4. what is $PATH
+			I do not fully understood the  meaning and usage of this command
+	5. variables:
+			you can set the value of avariable with an equal sign
+			in order to refer to a variable we need to place $ before the variable
+			EG:
+				name = ryan
+				echo $name
+	6. Default arguments:
+			When we run a script, there are several variables that get set automatically for us. Here are some of them:
+
+			$0 - The name of the script.
+			$1 - $9 - Any command line arguments given to the script. $1 is the first argument, $2 the second and so on.
+					to clarify, here is an example
+					eg: 	./ myscript.sh ryan sacatani 
+							$1 is represented by ryan
+							$2 is represented by sacatani
+			$# - How many command line arguments were given to the script.
+							$# is equals to 2
+			$* - All of the command line arguments.
+	7. back ticks `
+			enclosing a command with this will save the output of a command to a variable
+	8. if statement:
+			every if statements needs to be closed by a fi
+			an else statements need not be closed by a fi
+	
+summary:
+practice:

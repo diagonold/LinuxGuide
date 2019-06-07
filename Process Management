@@ -1,0 +1,36 @@
+introduction: 
+	Just like any operating system, linux has many processes going on at one time.
+	This process can be checked with the command 'top'
+materials and examples:
+	1. 'top'
+			this command lets us check all the processes happening in computer at any given time.
+			useful information such as our RAM usage and our virtual memory system
+			What is vistual memory?
+				we can simply think of it as a memory management technique involving hardware and software in order
+				manage shared memory space, memory isolation and increase capacity of memory.
+	2. ps [aux]
+			this stands for processes.
+			this will how you the current processes running in your terminal
+			adding aux will give a  complete system view
+	3.kill [signal] <ID>
+			when a process/application hang or locks up, we are able to kill and reser it with kill
+			first look for the hang process ID from the command line.
+			We can control the way we wkill th process.    
+			By default it will send signal -1 which will send a code saying "please nicely quit"
+			sending a signal of -9 will send ' make sure that process is killed, no matter what'
+	4. Multiple virtual consoles on linux	
+			This gives us access to another virtual console if one is hanged.
+			if desktop is hang, we can go to the next console and access process ID 
+			and kill processes that hangs up the system. 
+			ctrl + alt  + F2 ------------ command line console
+			ctrl + alt + F7  ------------ GUI console
+	5. jobs and &
+			with  this command we can see the forward and backward jobs.
+			with the symbol '&' amspersand, we can send jobs to the background 
+			then we can see the progress of these jobs with jobs
+	6. fg <job number>
+			we can use this to bring jobs from background to foreground
+			this is as long as you know the job number
+			job number can be find as the 1st column of the output of the command jobs
+summary 
+practices
