@@ -1,0 +1,1 @@
+this is cool, i can make text in command line and send it to a file with the use of process management
