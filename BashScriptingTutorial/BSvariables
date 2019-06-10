@@ -1,0 +1,60 @@
+Introduction:
+variables are just a way for us to store informaion
+there are 2 actions we can perform for variables
+	1. setting up a variable 
+		this is done with an equal sign
+		name = 'ryan'
+		output = `echo this is the output` 
+		#here we used backtick and stored the output of the echo command
+	2. reading a variable
+		when referring to a variable we place a $ sign in front on the variable name
+		the script will then replace the variable with its value once it sees the $ sign
+
+content:
+
+1. special variables
+	in order to get familiar with this fast, 
+	refer to the the bash scripting cheat sheet constantly
+	
+    $0 - The name of the Bash script.
+    $1 - $9 - The first 9 arguments to the Bash script. (As mentioned above.)
+    $# - How many arguments were passed to the Bash script.
+    $@ - All the arguments supplied to the Bash script.
+    $? - The exit status of the most recently run process.
+    $$ - The process ID of the current script.
+    $USER - The username of the user running the script.
+    $HOSTNAME - The hostname of the machine the script is running on.
+    $SECONDS - The number of seconds since the script was started.
+    $RANDOM - Returns a different random number each time is it referred to.
+    $LINENO - Returns the current line number in the Bash script.
+
+2. setting our own variables
+	as mentioned before, this can be done with equal sign
+3. quotes
+	name = ryan
+	#this is allowed
+	name = ryan sacatani
+	# this is not allowed, we need to use quotation for more complex strings
+	name = 'ryan sacatani' 
+	# this is allowed.
+4. command substitution
+	command substitution allows us to take the output of a command line and save it into a variable
+	it has the same idea as a backtick
+	eg:
+		myvar = $(ls/etc | wc -l)
+		# here we count the number of lines / entries in that directory
+5. exporting variables
+	we know that scripts are like processes, every single script has their own process
+	thus the variables created in 1 script will not be available to another readily as
+	they are ran on different processes
+	We can export variables to allow this to happen.
+	this is done with the export command
+	eg.
+	var1 = hello
+	export var1 
+	# This allows var 1 to available for access for any child process
+	
+
+summary:
+practice:
+	

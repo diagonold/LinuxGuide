@@ -1,0 +1,30 @@
+Introduction: Inputs
+	command line arguments are 1 form of user input tha we have learnt
+	Here , we will discover other ways to provide input to the bash script
+	
+
+content:
+
+1. read <variable name>
+	to ask the user input from a rnning bashscript
+	this takes the user's response and stores it to a variable
+	eg:
+	echo what is your name
+	read name
+	echo so your name is $name
+	
+	more can be done with read with the help of options
+	-p	stands for prompt, which allows you to specify a string prompt
+	-s 	stands for silent
+	
+	
+	we can also used read for multiple input items
+	eg:
+	#!/bin/bash
+	echo what are your favourite drinks
+	read drink1 drink2 drink3
+	
+	if the user enters 1 drink only, drink1 has a value while the rest are null values
+	if the user enters 4 drinks or more, the other drinks will be stored in drink3
+	
+2. Piping, using STDIN

@@ -39,6 +39,11 @@ materials and examples:
 			$* - All of the command line arguments.
 	7. back ticks `
 			enclosing a command with this will save the output of a command to a variable
+			Eg:
+			
+			lines = `/dev/osd-core/osd/test ls `
+			#the result of this command is then stored in lines
+			
 	8. if statement:
 			every if statements needs to be closed by a fi
 			an else statements need not be closed by a fi
