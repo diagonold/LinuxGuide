@@ -6,7 +6,7 @@ Introduction: Inputs
 content:
 
 1. read <variable name>
-	to ask the user input from a rnning bashscript
+	to ask the user input from a running bashscript
 	this takes the user's response and stores it to a variable
 	eg:
 	echo what is your name
@@ -27,4 +27,6 @@ content:
 	if the user enters 1 drink only, drink1 has a value while the rest are null values
 	if the user enters 4 drinks or more, the other drinks will be stored in drink3
 	
-2. Piping, using STDIN
+2. Piping, manipulation f stdin, stdout and stderr
+	basically command line interface commands and choosing only the outputs that you need
+	this allows us to automate commands together

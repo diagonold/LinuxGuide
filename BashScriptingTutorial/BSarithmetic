@@ -1,0 +1,44 @@
+Introduction:
+	an important skill to learn in bash scripting
+	after arithemtic we will head over to arithematic expansion
+	arithmetic is like math
+Content:
+1.let <arithmetic expression>
+	lets you save a result to mousepad
+	eg:
+		$let a=5+6
+		$echo $a
+	the result is 11
+	there is no space between the expression.
+	unless there are quotes.
+	remember how to use variables, placed the dollar sign before the variable name
+	
+2. expr item1 operator item2
+	insted read of storing the value, this prints the value 
+	eg:
+		$expr 5 + 4
+		the result of this is 5+4
+		$exp 5+4
+		the result of this is 9
+
+3. (()) double parentheses
+	this lets us save the output of the command easily to a variable 
+	thus we can do stuff like this
+	eg:
+		$ a = $((4 + 5 ))
+		$ ((a++))	#allows an increment of 1 on the same variable
+		$ ((a+= 10))	#same expression as a = a + 10
+		
+4. finding the length of a variable
+	${#variable}
+	eg:
+	$ a='Hello world"
+	$ echo ${#a}
+	
+		
+		
+	
+	
+
+summary:
+practice:

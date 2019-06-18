@@ -1,0 +1,40 @@
+introduction:
+	just your essential scripting tools
+	need to get familiar with the syntax
+content:
+1.basic if statements
+	if [<some test>]
+	then 
+		<commands, perform this task if true>
+	fi
+	
+	what is more important to know is the kind of conditionals that we can perform
+	these are the conditionals allowed inside the square brackets
+	! expression
+	-n strng
+	-z string
+	string1 = string2
+	string1 != string2
+	interger1 -eq interger2
+	interger1 -gt interger2
+	interger1 -lt interger2
+	-d file
+	-e file
+	-r file
+	-s file
+	-w file 
+	-x file
+	when we refer to a file we actually mean a path, we actually mean a path to a file.
+	
+	test <conditional>
+	this will store the result into $?
+	this will lead to either 1(false) or 0(true)
+2. indenting
+	there are no indenting rules for bash scripting
+	indenting is a good practice that helps with readability
+	
+3. nested if statements
+
+	
+summary:
+practice:
