@@ -1,0 +1,36 @@
+Ethtool 
+	a networking utility on linux
+	used to configure ethernet device on linux
+
+1. check availability of ethtool
+	sudo ethtool --version
+	if not available, download using apt
+	sudo apt install ethtool -y
+
+2. display network interface card information(nic) with ethtool
+	-first find the assigned names to all the available networks with commands like
+	ip addr
+	ifconfig (outdated)
+	sudo ip link show ( ip command is the new network config utility)
+	figure out which of this network is being used currently. look at the state of the network
+	to get the nic information type
+	sudo ethtool <nic name>
+
+3.  display network usage statistics
+	sudo ethtool -S <nic name>
+	with this we can look at the packets sent , received and collided
+
+4. setting of speed and modes in NICs manually
+	at sometimes, auto-negotiation may fail and you nic may use the wrong speed and mode
+	we can fix this with ethtool
+	for example to change the ehttool settings we can use the -s option which stands for change	
+	say we want to 
+	sudo ethtool -s <nic name> speed 1000 duplex full autoneg off
+	
+	
+
+questions that i asked myself?
+
+1. what is a duplex?
+	full duplex means you are able to send and receive data simultaneously
+	half duplex means that you can either send or reveive data at a time

@@ -11,19 +11,27 @@ content:
 	what is more important to know is the kind of conditionals that we can perform
 	these are the conditionals allowed inside the square brackets
 	! expression
-	-n strng
-	-z string
-	string1 = string2
-	string1 != string2
-	interger1 -eq interger2
-	interger1 -gt interger2
-	interger1 -lt interger2
-	-d file
-	-e file
-	-r file
-	-s file
-	-w file 
-	-x file
+	-n string		not empty string
+	-z string		empty string 
+	string1 == string2		both strings are equal		
+	string1 != string2		string1 is not equal to string 2
+	interger1 -eq interger2		int1 is equal to int2
+	interger1 -gt interger2		int1 is greater thatn int2
+	interger1 -lt interger2		int1 is less than int2 
+	&&		stands for and
+	!		stands for not
+	||		stands for or
+	
+	file conditions:
+	-d file		file is a directory
+	-e file		file exists
+	-r file		file is readable
+	-s file		file is a symbolic link
+	-w file 	file is writable
+	-x file		file is executable
+	file1 -nt file2		1 is more recent than 2
+	file1 -ot file2		2 is more recent than 1
+	file1 -ef file2		1 and 2 is the same file.
 	when we refer to a file we actually mean a path, we actually mean a path to a file.
 	
 	test <conditional>

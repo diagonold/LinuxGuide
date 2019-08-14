@@ -1,0 +1,10 @@
+Netplan
+	is used for configuring network interfaces
+	based on YAML.
+	netplan has replaced the old configuration file /etc/network/interface
+
+
+1. learn how to set dynamic or static IP addresing in ubuntu
+	https://vitux.com/how-to-configure-networking-with-netplan-on-ubuntu/
+
+
