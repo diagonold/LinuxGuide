@@ -50,6 +50,12 @@ Materials and examples
 		careful when removing, there is no turning back
 		-r recursive is a useful option to have to delete non empty directories
 		-i interactive will prompt you to ensure that the delete should be permanent.
+	8. SED command
+		it stands for stream editor. it can perform a lot of functions
+		like searching, find , replace.
+		you can edit files without even opening it.
+		a much quicker way to find and replace something in the file.
+		sed command supports regular expressions which allows it to perform complex pattern matchin
 
 		
 		

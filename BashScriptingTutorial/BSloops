@@ -1,0 +1,59 @@
+Introduction 
+	just useful stuff for loops
+	for automating repetitive tasks
+materials and examples
+
+1.for loops
+	syntax:
+		for (item) in (list)
+			do
+			<commands>
+			done
+	how to create a list?
+		many ways to create a list
+		sampleList = 'item1 item2 item3'
+		
+	
+2.while loops
+	syntax:
+	while [[<some test>]];
+	do 
+		<commands>
+	done
+
+
+
+3.until loops
+	similar to a for loop.
+	difference is that it will execute the commands until the test become true
+	syntax:
+	until [[ <some test> ]];
+		do
+			<commands>
+		done
+4.ranges
+	this will help create interget ranges shortcut
+	eg.
+	{1..5}	is equivalent to 1 2 3 4 5 
+	
+	{1..20..5}	create a list from 1 to 20 with intervals of 5
+
+
+5. controlling loops with break and continue
+	break the loop straight away
+	continue tells bash to stop running through this iteration of the loop
+			then begin the next iteration
+
+
+6. Select
+	this allows us to create simple menu system
+	syntax:
+	select <item> in <list>
+		do
+		<command>
+		done
+
+
+summary
+
+practice and challenges
