@@ -35,7 +35,6 @@
 	i think its for appendin text to files without opening them
 	
 
-<<<<<<< HEAD
 4. cron
 	cron is a linux daemon
 	daemons are processes that are running all the time behing the scenes
@@ -44,6 +43,29 @@
 
 	in order to use this, edit /etc/crontab
 	then set the intervals that you want the command to be executed
-=======
+
+5. The swiss army knife
+	netcat
+	syntax: nc [options] [destination] [port]
+	Type nc -h , for more information.
+	[options] raise flags to modify behaviour of netcat
+	[destination] is the ip address of the computer you are tying to contact
+	[port] is the endpoint and helps indentify the communication happening
+	Netcat is a tool that can help you read or write data over the internet
+	and is called the swiss army knife of "information security" fans
+	It can perform a lot of different tasks uncluding file transfer, chatting, port
+	scanning and even serve as both client and server
+
+
+6. ssh
+	This is a magic way to safely access unsafe networks. 
+	Commonly used to remote login to a computer and execute commands
+	How use ssh to remote login?
+	Remote means any computer that you are not currently on
+	On windows, use an SSHclient like PuTTY
+	On LInux, type on terminal ssh {username@host}/ip address
+	You can use either one.
 	
->>>>>>> 0b8f104450afcdb6d0cac8b5037ccd4a51f9bc1f
+
+
+
