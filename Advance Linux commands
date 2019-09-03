@@ -35,6 +35,7 @@
 	i think its for appendin text to files without opening them
 	
 
+<<<<<<< HEAD
 4. cron
 	cron is a linux daemon
 	daemons are processes that are running all the time behing the scenes
@@ -43,3 +44,6 @@
 
 	in order to use this, edit /etc/crontab
 	then set the intervals that you want the command to be executed
+=======
+	
+>>>>>>> 0b8f104450afcdb6d0cac8b5037ccd4a51f9bc1f
